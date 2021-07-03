@@ -1,8 +1,11 @@
 
+import Home from './screens/home';
+import './styles/global.scss';
+
 function App() {
   return (
     <div>
-      <h1>Testando projeto Star Wars</h1>
+      <Home />
     </div>
   );
 }
