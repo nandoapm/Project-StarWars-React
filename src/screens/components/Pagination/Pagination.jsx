@@ -1,4 +1,3 @@
-
 import { useAppContext } from '../../../providers/AppContext';
 import { FaChevronRight, FaChevronLeft} from 'react-icons/fa'
 import './styles.scss';

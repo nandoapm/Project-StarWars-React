@@ -1,5 +1,3 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
 import { useAppContext } from '../../../providers/AppContext';
 import './styles.scss';
 
