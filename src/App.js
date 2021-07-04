@@ -1,12 +1,17 @@
 
+import AppContext from './providers/AppContext';
+import Header from './screens/components/Header';
+import Pagination from './screens/components/Pagination/Pagination';
 import Home from './screens/home';
 import './styles/global.scss';
 
 function App() {
   return (
-    <div>
+    <AppContext>
+      <Header />
       <Home />
-    </div>
+      <Pagination />
+    </AppContext>
   );
 }
 

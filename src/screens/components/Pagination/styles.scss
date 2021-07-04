@@ -1,0 +1,42 @@
+.card-pagination {
+    display: flex;
+    justify-content: center;
+    
+    .main-button {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: none;
+        margin: 0 10px;
+        padding: 5px;
+        >svg {
+            width: 30px;
+            height: 30px;
+            color: var(--gray-700);
+        }
+    }
+    .main-button:hover {
+        background: var(--gray-200);
+    }
+
+    .group-button {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        border-radius: 3px;
+        >button {
+            margin: 0 2px;
+            width: 30px;
+            height: 30px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none
+        }
+
+        >button:hover {
+            background: var(--gray-200);
+        }
+    }
+}
