@@ -11,7 +11,7 @@ export default function Header() {
         <nav>
             <img src="/images/logo.png"/>
             <span>
-                <input className="gate" id="move" type="text" placeholder="Busque seu personagem" value={search} onChange={(e) => setSearch(e.target.value)} /><label for="move">Busca</label>
+                <input className="gate" id="move" type="text" placeholder="Busque seu personagem" value={search} onChange={(e) => setSearch(e.target.value)} /><label htmlFor="move">Busca</label>
             </span>
         </nav>
     </header>

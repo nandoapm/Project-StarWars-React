@@ -10,26 +10,47 @@
   .modal-main {
     position:fixed;
     background: white;
-    width: 40%;
-    height: 40%;
+    max-width: 90%;
+    max-height: 60%;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    color: chocolate;
-    
+    color: var(--gray-700);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.6);;
+    overflow: scroll;
 
     .modal-title {
         display: flex;
         justify-content: space-between;
+        padding: 10px;
         >button {
             border: none;
             background: transparent;
-            margin: 0 10px;
             >svg {
                 width: 30px;
                 height: 30px;
                 color: var(--gray-700);
             }
+        }
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10px;
+
+        .list-starship {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 100%;
+            margin: 4px;
+            border-radius: 5px;
+            background-color: var(--gray-700);
+            color: var(--gray-200);
         }
     }
   }
