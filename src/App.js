@@ -1,5 +1,6 @@
 
 import AppContext from './providers/AppContext';
+import { Footer } from './screens/components/Footer/Footer';
 import Header from './screens/components/Header';
 import Pagination from './screens/components/Pagination/Pagination';
 import Home from './screens/home/Home';
@@ -11,10 +12,9 @@ function App() {
       <Header />
       <Home />
       <Pagination />
+      <Footer />
     </AppContext>
   );
 }
-
-/* AIzaSyBGKuPYo0QlY9Y5UoiLbiXD9CNIqk1Hgh8 */
 
 export default App;

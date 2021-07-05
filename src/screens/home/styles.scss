@@ -39,7 +39,8 @@
                     height: 90%;
                     border-radius: 50%;
                     background: var(--white);
-                    border: 2px solid var(--yellow-500);
+                    border: 3px solid var(--yellow-500);
+                    box-shadow: rgba(255, 255, 255, 0.56) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.56) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
                 }
                 >img:hover {
                     width: 100%;
@@ -58,21 +59,18 @@
             >button:hover {
                 span {
                     color: var(--yellow-500);
-                }
-                
+                }   
             }
-            
         }
         .cardContent:hover {
             width: 155px;
             height: 155px;
         }
-    }
-
-    /* quando tiver duas section */
-    section + section {
-        margin-left: 2rem;
-    } 
-
-    
+    }  
 }
+
+@media only screen and (max-width: 400px) {
+    .content-container {
+        width: 300px;
+    }
+  }

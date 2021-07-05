@@ -1,11 +1,11 @@
 import { useAppContext } from '../../providers/AppContext';
 import { useState } from "react";
-import './styles.scss';
 import Modal from '../components/Modal/Modal';
 import { Loading } from '../components/Loading/Loading';
+import './styles.scss';
 
 export default function Home() {
-  const { users, loading, characters } = useAppContext()
+  const { users, loading } = useAppContext()
   const [show, setShow] = useState(false)
   const [starships, setStarships] = useState(false)
   const [name, setName] = useState(false)
@@ -29,7 +29,6 @@ export default function Home() {
           <div className="card-content">
             { loading ? <Loading /> :
               users.map((person, i) => 
-                
                 <button key={i} type="button" onClick={e => showModal(person.starships, person.name)}>
                   { console.log(person.image[0]) }
                   <img src={person.image[0]} />

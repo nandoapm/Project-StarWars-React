@@ -9,10 +9,10 @@
   
   .modal-main {
     position:fixed;
-    background: white;
+    background: var(--white);
     max-width: 90%;
     max-height: 60%;
-    top:50%;
+    top:53%;
     left:50%;
     transform: translate(-50%,-50%);
     color: var(--gray-700);
