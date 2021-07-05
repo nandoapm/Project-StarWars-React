@@ -5,7 +5,7 @@ import Modal from '../components/Modal/Modal';
 import { Loading } from '../components/Loading/Loading';
 
 export default function Home() {
-  const { users, loading } = useAppContext()
+  const { users, loading, characters } = useAppContext()
   const [show, setShow] = useState(false)
   const [starships, setStarships] = useState(false)
   const [name, setName] = useState(false)
@@ -29,8 +29,10 @@ export default function Home() {
           <div className="card-content">
             { loading ? <Loading /> :
               users.map((person, i) => 
+                
                 <button key={i} type="button" onClick={e => showModal(person.starships, person.name)}>
-                  <img src="/images/img.png" />
+                  { console.log(person.image[0]) }
+                  <img src={person.image[0]} />
                   <span>{person.name}</span>
                 </button>
               )}

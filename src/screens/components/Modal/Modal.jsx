@@ -11,7 +11,6 @@ export default function Modal({ handleClose, show, children, starships, name }) 
     useEffect(() => {
         setStarshipsList([])
         for(let i = 0; i < starships.length; i = i + 1 ) {
-            console.log('[for]', starships[i]);
             axios.get(`${starships[i]}`)
                 .then(res => {
                     console.log(res.data)
