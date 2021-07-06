@@ -25,7 +25,7 @@ export default function AppContext(props) {
 
     const getListUsers = async (characters) => {
         setLoading(true)
-        await API.get(`?page=${page}`)
+        await API.get(`https://swapi.dev/api/people/?page=${page}`)
         .then(res => {
             const userList = []
             res.data.results.forEach(element => {
