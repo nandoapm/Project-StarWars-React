@@ -7,7 +7,6 @@ export default function Header() {
   return (
     <>
     <header className="header">
-        {/* <img src="/images/header.svg"/> */}
         <nav>
           <div>
             <img src="/images/logo.png"/>

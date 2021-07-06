@@ -6,14 +6,12 @@ import './styles.scss';
 
 export default function Modal({ handleClose, show, children, starships, name }) {
     const [starshipsList, setStarshipsList] = useState([])
-    const { loading } = useAppContext()
 
     useEffect(() => {
         setStarshipsList([])
         for(let i = 0; i < starships.length; i = i + 1 ) {
             axios.get(`${starships[i]}`)
                 .then(res => {
-                    console.log(res.data)
                     const body = {
                         starship: res.data,
                         number: i
@@ -56,7 +54,6 @@ export default function Modal({ handleClose, show, children, starships, name }) 
                             <span><strong>Equipe Técnica:&nbsp;&nbsp;</strong>{e.starship.crew}</span>
                             <span><strong>Capacidade:&nbsp;&nbsp;</strong>{e.starship.cargo_capacity}</span>
                             <span><strong>MGLT:&nbsp;&nbsp;</strong>{e.starship.MGLT}</span>
-                            {/* <span><strong>Filmes</strong>{e.starship.filmes}</span> */}
                             <span><strong>Fabricante:&nbsp;&nbsp;</strong>{e.starship.manufacturer}</span>
                         </div>
                 )}
