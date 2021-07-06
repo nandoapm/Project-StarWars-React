@@ -14,7 +14,7 @@ export default function AppContext(props) {
     }, [search, page])
 
     const getImages = async () => {
-        await CHARACTERS.get(`akabab/starwars-api/0.2.1/api/all.json`)
+        await CHARACTERS.get(`https://raw.githubusercontent.com/akabab/starwars-api/0.2.1/api/all.json`)
             .then(res => {
                 getListUsers(res.data)
             })
